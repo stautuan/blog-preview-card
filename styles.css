@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4d04e;
+  font-family: "Figtree", sans-serif;
+  font-size: 14px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  width: 384px;
+  height: 522px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  box-shadow: 8px 8px;
+  padding: 23px;
+}
+
+header {
+  margin-bottom: 18px;
+}
+
+.illustration {
+  width: 336px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.tag {
+  background-color: #f4d04e;
+  font-weight: 700;
+  width: 82px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-bottom: 14px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f4d04e;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.description {
+  font-size: 16px;
+  color: #808080;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.author--image {
+  width: 30px;
+}
+
+.author--name {
+  font-weight: 700;
+}
+
+@media (max-width: 720px) {
+  .card {
+    width: 327px;
+    height: 501px;
+  }
+
+  body {
+    font-size: 11px;
+  }
+
+  header {
+    margin-bottom: 18px;
+  }
+
+  .illustration {
+    width: 279px;
+    height: 200px;
+    margin-bottom: 20px;
+    object-fit: cover;
+  }
+
+  .tag {
+    width: 73px;
+    height: 26px;
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}
